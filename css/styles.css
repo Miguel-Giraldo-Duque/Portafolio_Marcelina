@@ -463,6 +463,10 @@ img{
     color: var(--firtColor);
 }
 
+.button--link:hover{
+    background-color: transparent;
+    color: var(--firt-color-alt);
+}
 .qualification__icon{
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
@@ -471,7 +475,7 @@ img{
 .qualification__data{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
-    column-gap: 2.0rem;
+    column-gap: 1.9rem;
 }
 
 .qualification__tilte{
@@ -517,4 +521,83 @@ img{
 .Qa{
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.servises__conteiner{
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.servises__conteiner{
+    position: relative;
+    background-color: var(--conteiner-color);
+    padding:3.5rem .5rem 1.25rem 1.5rem ;
+    border-radius: .25rem ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.servises__content:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+
+.section__icon {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--firtColor);
+    margin-bottom: var(--mb-1);
+}
+.servises__button:hover .button__icon{
+    transform: translate(.25rem );
+}
+
+.servises__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .15);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.servises__modal-content{
+    position: relative;
+    background-color:var(--conteiner-color) ;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.servises__modal-servises{
+    row-gap: 1rem;
+}
+
+.servises__modal-servises{
+    display: flex;
+}
+
+.servises__modal-tilte{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.servises__modal-close{
+    position: absolute ;
+    top: 1rem;
+    right: 1rem;
+    font-size:1.5rem ;
+    color: var(--firtColor);
+    cursor: pointer;
+}
+.servises__modal-icon{
+    color: var(--firtColor);
+    margin-right: var(--mb-0-25);
 }
